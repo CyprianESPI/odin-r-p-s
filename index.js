@@ -34,7 +34,7 @@ function checkResult(player_choice) {
     if (player_choice === computer_choice) {
         console.log("tie");
     }
-    else if (player_choice + 1 === computer_choice) {
+    else if (player_choice === (computer_choice + 1) % OPTIONS.length) {
         console.log("you win");
     }
     else {
