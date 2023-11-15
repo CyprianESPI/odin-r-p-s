@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -14,9 +14,11 @@
 
     <h2>Your Choice</h2>
 
-    <button onclick="rockClicked()">Rock</button>
-    <button onclick="paperClicked()">Paper</button>
-    <button onclick="scissorClicked()">Scissor</button>
+    <button onclick="rockClicked()">Rock 🪨</button>
+    <button onclick="paperClicked()">Paper 📃</button>
+    <button onclick="scissorClicked()">Scissor ✂️</button>
+
+    <h3 id="player"></h3>
 
     <h2>Computer Choice</h2>
 
@@ -25,6 +27,18 @@
     <h2>Result</h2>
 
     <h3 id="result"></h3>
+
+    <h2>Score</h2>
+
+    <button onclick="reset()">Reset</button>
+
+    <h3>You</h3>
+
+    <h4 id="scorePlayer">0</h4>
+
+    <h3>Computer</h3>
+
+    <h4 id="scoreComputer">0</h4>
 
 </body>
 
