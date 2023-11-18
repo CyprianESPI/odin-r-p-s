@@ -2,7 +2,7 @@ console.log("Welcome");
 
 const ROCK = 0;
 const PAPER = 1;
-const SCISSOR = 2;
+const SCISSORS = 2;
 const OPTIONS = ["🪨", "📃", "✂️"];
 let result = "";
 let computerChoice = "";
@@ -44,8 +44,8 @@ function paperClicked() {
     checkResult(PAPER);
 }
 
-function scissorClicked() {
-    checkResult(SCISSOR);
+function scissorsClicked() {
+    checkResult(SCISSORS);
 }
 
 function getComputerChoice() {
@@ -78,4 +78,9 @@ function checkResult(player_choice) {
 
     console.log(result);
     updatePage();
+
+    if (playerWins === 5)
+        window.location = "./results/win.html";
+    else if (computerWins === 5)
+        window.location = "./results/lose.html";
 }
